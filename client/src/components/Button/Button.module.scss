@@ -15,5 +15,5 @@
   font-weight: bold;
 
   @include button-radius;
-  @include box-shadow;
+  @include box-shadow($shadow);
 }

@@ -1,5 +1,8 @@
+@import '../../colors.scss';
+
 .about {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: $bg-gray;
 }

@@ -1,0 +1,81 @@
+@import '../../../../colors.scss';
+@import '../../../../global.scss';
+
+.subjectCard {
+  // border: 1px solid red;
+
+  height: 835px;
+  width: 502px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__picture {
+    // border: 1px solid red;
+
+    height: 75%;
+    max-height: 623px;
+    position: relative;
+
+    svg {
+      color: $green;
+      font-size: 65px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    img {
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    // border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 15%;
+    // max-height: 126px;
+    width: 50%;
+    font-family: Montserrat;
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p {
+      color: $text-gray;
+      font-weight: 100;
+    }
+  }
+
+  &__button {
+    // border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    height: 10%;
+
+    button {
+      height: 56px;
+      width: 304px;
+      text-transform: uppercase;
+      font-family: Montserrat;
+      font-weight: bold;
+      @include button-radius;
+      @include box-shadow($shadow);
+      border: none;
+      background-color: $white;
+    }
+  }
+}

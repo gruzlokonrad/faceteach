@@ -1,0 +1,19 @@
+@import '../../colors.scss';
+@import '../../global.scss';
+
+.button {
+  background-color: $yellow;
+  color: $black;
+  width: 454px;
+  height: 65px;
+  border: none;
+  margin-top: 34px;
+
+
+
+  font: 26px Montserrat;
+  font-weight: bold;
+
+  @include button-radius;
+  @include box-shadow;
+}

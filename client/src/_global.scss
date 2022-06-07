@@ -1,3 +1,18 @@
+@import  './colors.scss';
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
 @mixin button-radius {
   border-radius: 7px;
+}
+
+@mixin text-shadow {
+  text-shadow: 0px 3px 6px $shadow;
+}
+
+@mixin box-shadow {
+  box-shadow: 0px 3px 6px $shadow;
 }

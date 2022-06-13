@@ -4,6 +4,7 @@ import CurrentlyOnline from '../../CurrentlyOnlineSection/CurrentlyOnline';
 import SubjectSection from '../../SubjectSection/SubjectSection';
 import './Home.scss';
 import Footer from '../../Footer/Footer';
+import Copyright from '../../CopyrightSection/Copyright';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <CurrentlyOnline />
       <SubjectSection />
       <Footer />
+      <Copyright />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import About from '../../AboutSection/About';
 import CurrentlyOnline from '../../CurrentlyOnlineSection/CurrentlyOnline';
 import SubjectSection from '../../SubjectSection/SubjectSection';
 import './Home.scss';
-// import Footer from '../../Footer/Footer';
+import Footer from '../../Footer/Footer';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <About />
       <CurrentlyOnline />
       <SubjectSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

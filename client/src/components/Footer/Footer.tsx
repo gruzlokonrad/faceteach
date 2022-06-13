@@ -9,15 +9,23 @@ const Footer = () => {
       <Container>
         <div className={style.wrapper}>
 
+
+          {/* logo div */}
+          <div className={style.logo}>
+            <img src={logo} alt="faceteach" />
+          </div>
+
+
+          {/* container with items */}
           <div className={style.wrapper__container}>
-            <div className={style.logo}>
-              <img src={logo} alt="faceteach" />
-            </div>
             <FooterItem
               header="Whatsapp"
               content="Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
             />
 
+
+
+            {/* extra container with custom styl */}
             <div className={style.wrapper__container__container}>
               <FooterItem
                 header="E-mail"

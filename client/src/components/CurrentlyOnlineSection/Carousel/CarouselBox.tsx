@@ -23,8 +23,8 @@ const CarouselBox = ({ team }: ICarouselBox) => {
       <article className="carouselBox">
 
         <Carousel
-          show={3}
-          // show={1.3}
+          show={3} //desktop carousel
+          // show={1.3} //mobile carousel
           slide={1}
           swiping={true}
           leftArrow={<FontAwesomeIcon className="leftArrow" icon={faCircleArrowLeft} />}
@@ -39,11 +39,6 @@ const CarouselBox = ({ team }: ICarouselBox) => {
               imgId={person.imgId}
             />
           ))}
-
-          {/* <SubjectCard />
-        <SubjectCard />
-        <SubjectCard />
-        <SubjectCard /> */}
         </Carousel>
       </article>
     </>

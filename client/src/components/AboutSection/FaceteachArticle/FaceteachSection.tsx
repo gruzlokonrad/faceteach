@@ -1,19 +1,19 @@
-import Button from "../../Button/Button";
-import Image from '../../../images/2.jpg';
-import './FaceteachArticle.scss';
+import Button from "components/Button/Button";
+import Image from 'images/2.jpg';
+import style from './FaceteachArticle.module.scss';
 
 
 const FaceteachArticle = () => {
   return (
-    <article className="faceteachArticle">
-      <div className="picture">
+    <article className={style.faceteachArticle}>
+      <div className={style.picture}>
         <img src={Image} alt="" />
       </div>
-      <div className="wrapper">
-        <header className="wrapper__header">
+      <div className={style.wrapper}>
+        <header className={style.wrapper__header}>
           <h2>Czym jest faceteach?</h2>
         </header>
-        <div className="wrapper__content">
+        <div className={style.wrapper__content}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             <span>
@@ -30,7 +30,7 @@ const FaceteachArticle = () => {
             </span>
           </p>
         </div>
-        <div className="wrapper__button">
+        <div className={style.wrapper__button}>
           <Button>Zaloguj się</Button>
         </div>
       </div>

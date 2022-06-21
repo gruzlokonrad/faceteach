@@ -1,8 +1,6 @@
-import '../../_colors.scss';
-import './Menu.scss';
+import '_colors.scss';
 import {
   Navbar,
-  // Container,
   Nav,
   NavDropdown,
   Form,
@@ -11,8 +9,9 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faCircleCheck, faCircleUser } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../images/logo_1.png';
+import logo from 'images/logo_1.png';
 import Container from '../Container/Container';
+import './Menu.scss';
 
 const Menu = () => {
   return (
@@ -21,8 +20,8 @@ const Menu = () => {
         <Container>
           <img src={logo} alt="logo" />
           <div className="accountBar__icon">
-            <FontAwesomeIcon className="circle-check" icon={faCircleCheck} />
-            <FontAwesomeIcon className="circle-user" icon={faCircleUser} />
+            <FontAwesomeIcon className="circle_check" icon={faCircleCheck} />
+            <FontAwesomeIcon className="circle_user" icon={faCircleUser} />
           </div>
         </Container>
       </div>
@@ -30,8 +29,8 @@ const Menu = () => {
         <Container>
           <img src={logo} alt="logo" />
           <div className="accountBar__icon">
-            <FontAwesomeIcon className="circle-check" icon={faCircleCheck} />
-            <FontAwesomeIcon className="circle-user" icon={faCircleUser} />
+            <FontAwesomeIcon className="circle_check" icon={faCircleCheck} />
+            <FontAwesomeIcon className="circle_user" icon={faCircleUser} />
             <Navbar.Toggle aria-controls="navbarScroll" />
           </div>
           <Navbar.Collapse id="navbarScroll">

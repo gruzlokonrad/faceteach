@@ -1,5 +1,5 @@
-@import "../../colors.scss";
-@import "../../global.scss";
+@import "colors.scss";
+@import "global.scss";
 
 .subjectSection {
   display: flex;
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@include view-mobile {
   .subjectSection {
 
     .wrapper {

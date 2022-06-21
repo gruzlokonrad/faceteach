@@ -1,6 +1,6 @@
 import Container from '../Container/Container';
 import style from './Footer.module.scss';
-import logo from '../../images/logo_1.png';
+import logo from 'images/logo_1.png';
 import FooterItem from './FooterItem/FooterItem';
 
 const Footer = () => {

@@ -1,9 +1,10 @@
 // import { useState } from 'react';
-import './CarouselBox.scss';
 import SubjectCard from './SubjectCard/SubjectCard';
+import { useMediaQuery } from 'react-responsive';
 import { Carousel } from '@trendyol-js/react-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import style from './CarouselBox.module.scss';
 
 interface ICarouselBox {
   team:
@@ -18,17 +19,17 @@ interface ICarouselBox {
 }
 
 const CarouselBox = ({ team }: ICarouselBox) => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 985px)' });
+
   return (
     <>
-      <article className="carouselBox">
-
+      <article className={style.carouselBox}>
         <Carousel
-          show={3} //desktop carousel
-          // show={1.3} //mobile carousel
+          show={isTabletOrMobile ? 1.3 : 3}
           slide={1}
           swiping={true}
-          leftArrow={<FontAwesomeIcon className="leftArrow" icon={faCircleArrowLeft} />}
-          rightArrow={<FontAwesomeIcon className="rightArrow" icon={faCircleArrowRight} />}
+          leftArrow={<FontAwesomeIcon className={style.leftArrow} icon={faCircleArrowLeft} />}
+          rightArrow={<FontAwesomeIcon className={style.rightArrow} icon={faCircleArrowRight} />}
         >
           {team.map((person, index) => (
             <SubjectCard
@@ -42,7 +43,6 @@ const CarouselBox = ({ team }: ICarouselBox) => {
         </Carousel>
       </article>
     </>
-
   )
 }
 

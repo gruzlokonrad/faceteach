@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Container from '../Container/Container';
 import CarouselBox from './Carousel/CarouselBox';
-import './CurrentlyOnline.scss';
+import style from './CurrentlyOnline.module.scss';
 
 const CurrentlyOnline = () => {
 
@@ -23,11 +23,11 @@ const CurrentlyOnline = () => {
   
   
   return (
-    <section className="currentlyOnline">
-      <header className="currentlyOnline__header">
+    <section className={style.currentlyOnline}>
+      <header className={style.currentlyOnline__header}>
         <h2>Obecnie Online</h2>
       </header>
-      <div className="currentlyOnline__content">
+      <div className={style.currentlyOnline__content}>
         <Container>
           <CarouselBox team={activeTeachers} />
           <CarouselBox team={activePupil} />

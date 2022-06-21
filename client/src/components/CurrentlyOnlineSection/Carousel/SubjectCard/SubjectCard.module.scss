@@ -1,17 +1,7 @@
-@import '../../../../colors.scss';
-@import '../../../../global.scss';
+@import 'colors.scss';
+@import 'global.scss';
 
 .subjectCard {
-  // border: 1px solid blue;
-
-  // height: 835px;
-  // min-width: 350px;
-  // width: 100%;
-  // width: 502px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: space-between;
 
   &__picture {
     max-height: 623px;
@@ -83,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@include view-mobile {
   .subjectCard {
     @include box-shadow($shadow);
     margin: 5px 10px;

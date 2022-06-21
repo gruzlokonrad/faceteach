@@ -1,10 +1,10 @@
-import Image from '../../../images/3.jpg';
-import './ChooseArticle.scss';
+import Image from 'images/3.jpg';
+import style from './ChooseArticle.module.scss';
 
 const ChooseArticle = () => {
   return (
-    <article className="chooseArticle">
-      <div className="wrapper">
+    <article className={style.chooseArticle}>
+      <div className={style.wrapper}>
         <button>
           Dla Ucznia
         </button>
@@ -12,7 +12,7 @@ const ChooseArticle = () => {
           Dla Nauczyciela
         </button>
       </div>
-      <div className="picture">
+      <div className={style.picture}>
         <img src={Image} alt="" />
       </div>
     </article>

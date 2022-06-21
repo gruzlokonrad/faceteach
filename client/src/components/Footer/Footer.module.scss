@@ -1,5 +1,5 @@
-@import '../../colors.scss';
-@import '../../global.scss';
+@import 'colors.scss';
+@import 'global.scss';
 
 .footer {
   margin-top: 120px;
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 1530px) {
+@include view-tablet {
   .footer {
 
     .wrapper {
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@include view-mobile {
   .footer {
     .wrapper {
       width: auto;

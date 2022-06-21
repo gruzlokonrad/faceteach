@@ -1,7 +1,7 @@
 // import Image from '../../../../images/4.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import './SubjectCard.scss';
+import style from './SubjectCard.module.scss';
 
 interface ISubjectCard {
   name: string,
@@ -11,20 +11,20 @@ interface ISubjectCard {
 }
 
 const SubjectCard = ({ name, subject, education, imgId }: ISubjectCard) => {
-  let imgUrl = require(`../../../../images/${imgId}.jpg`)
+  let imgUrl = require(`images/${imgId}.jpg`)
 
   return (
-    <div className="subjectCard">
-      <div className="subjectCard__picture">
+    <div className={style.subjectCard}>
+      <div className={style.subjectCard__picture}>
         <img src={imgUrl} alt={name} />
-        <FontAwesomeIcon className="circle-check" icon={faCircleCheck} />
+        <FontAwesomeIcon icon={faCircleCheck} />
       </div>
-      <div className="subjectCard__description">
+      <div className={style.subjectCard__description}>
         <h3>{subject}</h3>
         <p>{name}</p>
         {education && <p>Klasa: {education}</p>}
       </div>
-      <div className="subjectCard__button">
+      <div className={style.subjectCard__button}>
         <button>
           Umów Lekcję
         </button>

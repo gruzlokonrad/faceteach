@@ -1,0 +1,46 @@
+@import 'colors.scss';
+@import 'global.scss';
+
+.carouselBox {
+  display: flex;
+  column-gap: 16px;
+  padding: 30px 0;
+
+
+  [class^="styles-module_carousel-base"] {
+    position: relative;
+
+    div:not([class]) {
+      margin-top: 18%;
+      font-size: 60px;
+
+      * {
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid $black;
+        background-color: $black;
+        color: $white;
+        z-index: 1;
+      }
+    }
+
+    .rightArrow {
+      right: -25px;
+    }
+
+    .leftArrow {
+      left: -30px;
+
+    }
+  }
+}
+
+@include view-mobile {
+  .carouselBox {
+    [class^="styles-module_carousel-base"] {
+      div:not([class]) {
+        display: none;
+      }
+    }
+  }
+}

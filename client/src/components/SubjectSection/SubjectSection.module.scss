@@ -1,0 +1,70 @@
+@import "colors.scss";
+@import "global.scss";
+
+.subjectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3%;
+  }
+
+  &__header {
+    background-image: linear-gradient(transparent, $bg-yellow);
+    width: 100%;
+
+    h2 {
+      font-size: 32px;
+      text-transform: uppercase;
+      padding: 50px 0;
+      text-align: center;
+      font-family: Montserrat;
+      margin-bottom: 0;
+    }
+  }
+
+  &__subjectItem {
+    margin: 30px 0;
+    height: 350px;
+    width: 324px;
+    background-color: $white;
+    @include box-shadow($shadow);
+    border-radius: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+      background-color: $yellow;
+
+      svg {
+        color: $white;
+      }
+    }
+
+    svg {
+      margin: 0 auto;
+      color: $yellow;
+      font-size: 140px;
+    }
+
+    p {
+      margin: 10% auto;
+      font-family: Montserrat;
+      font-size: 26px;
+    }
+  }
+}
+
+@include view-mobile {
+  .subjectSection {
+
+    .wrapper {
+      justify-content: center;
+    }
+  }
+}

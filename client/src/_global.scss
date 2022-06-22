@@ -1,5 +1,21 @@
 @import  './colors.scss';
 
+$mobile-width: 991.98px;
+$tablet-width: 1530px;
+
+@mixin view-mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin view-tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+
 @font-face {
   font-family: "Montserrat";
   src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
@@ -13,6 +29,6 @@
   text-shadow: 0px 3px 6px $shadow;
 }
 
-@mixin box-shadow {
-  box-shadow: 0px 3px 6px $shadow;
+@mixin box-shadow($color) {
+  box-shadow: 0px 3px 6px $color;
 }

@@ -1,4 +1,4 @@
-import ButtonStyles from './Button.module.scss';
+import styles from './Button.module.scss';
 
 interface IButton {
   children : string
@@ -6,7 +6,7 @@ interface IButton {
 
 const Button = ({ children }: IButton) => {
   return (
-    <button className={ButtonStyles.button}>
+    <button className={styles.button}>
       {children}
     </button>
   )

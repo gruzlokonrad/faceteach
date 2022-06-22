@@ -1,5 +1,5 @@
-@import '../../colors.scss';
-@import '../../global.scss';
+@import 'colors.scss';
+@import 'global.scss';
 
 .button {
   background-color: $yellow;
@@ -15,5 +15,5 @@
   font-weight: bold;
 
   @include button-radius;
-  @include box-shadow;
+  @include box-shadow($shadow);
 }

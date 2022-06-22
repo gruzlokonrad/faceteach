@@ -1,12 +1,20 @@
-// import About from '../../AboutSection/About';
-import Splash from '../../SplashSection/Splash';
-import './Home.scss';
+import Splash from 'components/SplashSection/Splash';
+import About from 'components/AboutSection/About';
+import CurrentlyOnline from 'components/CurrentlyOnlineSection/CurrentlyOnline';
+import SubjectSection from 'components/SubjectSection/SubjectSection';
+import style from './Home.module.scss';
+import Footer from 'components/Footer/Footer';
+import Copyright from 'components/CopyrightSection/Copyright';
 
 const Home = () => {
   return (
-    <div className="homeSection">
+    <div className={style.homeSection}>
       <Splash />
-      {/* <About /> */}
+      <About />
+      <CurrentlyOnline />
+      <SubjectSection />
+      <Footer />
+      <Copyright />
     </div>
   )
 }

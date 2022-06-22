@@ -1,5 +1,5 @@
-@import '../../colors.scss';
-@import '../../global.scss';
+@import 'colors.scss';
+@import 'global.scss';
 
 .menu {
   text-align: center;
@@ -27,11 +27,11 @@
         margin-right: 16px;
       }
 
-      .circle-check {
+      .circle_check {
         color: $green;
       }
 
-      .circle-user {
+      .circle_user {
         color: $blue;
       }
     }
@@ -49,11 +49,6 @@
       height: 99px;
       display: none;
     }
-
-    //  //  Margin for nav-link like in a project
-    // .nav-link:not(:last-child) {
-    //   margin-right: 30px;
-    // }
 
     .nav-item.dropdown {
       display: flex;
@@ -119,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@include view-mobile {
   .menu {
 
     .nav-link:hover,
@@ -188,8 +183,6 @@
         width: 82px;
         height: 54px;
       }
-
-
 
       form {
         padding-left: 7px;

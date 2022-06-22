@@ -1,0 +1,83 @@
+@import 'colors.scss';
+@import 'global.scss';
+
+.footer {
+  margin-top: 120px;
+  border-top: 2px solid $yellow;
+  padding: 65px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 40px;
+      width: 300px;
+
+      img {
+        width: 68px;
+        height: 83px;
+      }
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+
+      &__container {
+        display: flex;
+      }
+    }
+  }
+}
+
+@include view-tablet {
+  .footer {
+
+    .wrapper {
+
+      &__container {
+        display: flex;
+        align-items: center;
+        min-width: 600px;
+        width: 50%;
+
+        &__container {
+          flex-wrap: wrap;
+          min-width: 300px;
+          width: 33%;
+        }
+      }
+    }
+  }
+}
+
+@include view-mobile {
+  .footer {
+    .wrapper {
+      width: auto;
+
+      .logo {
+        width: auto;
+      }
+      
+      &__container {
+        flex-wrap: wrap;
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+
+        .logo {
+          width: auto;
+        }
+
+        &__container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
